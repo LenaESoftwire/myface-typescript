@@ -8,17 +8,14 @@
         <% results.forEach(function(post) {%>
         <li>
             <article> 
+                <p><%= post.postedBy.name %></p> 
+                <time><%= post.createdAt %></time>
                 <p><%= post.message %></p>
                 <img src="<%= post.imageUrl %>" />
+                <p><%= post.likedBy.name %> </p> <p> <%= post.dislikedBy.name %></p>
             </article>  
         </li>
-        <!-- <li></li>
-            <figure>
-            <figcaption><<%= post.message %><figcaption>
-            
-            <img src="<%= post.imageUrl %>" />
-            </figure>  
-        </li> -->
+
         <% }); %>
     </ol>
     <nav>
