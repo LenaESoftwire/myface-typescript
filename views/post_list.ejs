@@ -7,19 +7,28 @@
     <ol>
         <% results.forEach(function(post) {%>
         <li>
-            <%= post.message %>
-            <img src="<%= post.imageUrl %>" />
+            <article> 
+                <p><%= post.message %></p>
+                <img src="<%= post.imageUrl %>" />
+            </article>  
         </li>
-        <% }); %>ejs
+        <!-- <li></li>
+            <figure>
+            <figcaption><<%= post.message %><figcaption>
+            
+            <img src="<%= post.imageUrl %>" />
+            </figure>  
+        </li> -->
+        <% }); %>
     </ol>
-    <div id="navigations">
+    <nav>
         <%if (previous) { %>
         <a href="<%= previous %>">Previous</a>
         <% } %>
         <%if (next) { %>
         <a href="<%= next %>">Next</a>
         <% } %>
-    </div>
+    </nav> 
 </body>
 <%- include('_footer') -%>
 
