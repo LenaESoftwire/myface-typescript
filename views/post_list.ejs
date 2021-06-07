@@ -7,8 +7,9 @@
     <% results.forEach(function(post) {%>
         <li>
             <%= post.message %>
+            <img src="<%= post.imageUrl %>" />
         </li>
-    <% }); %>
+    <% }); %>ejs
 </ol>
 </body>
 <%- include('_footer') -%>
