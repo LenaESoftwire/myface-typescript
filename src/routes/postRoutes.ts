@@ -17,8 +17,7 @@ router.get('/create/', async (request, response) => {
     return response.render('create_post');
 });
 
-router.post('/create/',
-    body('message').notEmpty(),
+router.post('/create/', body('message').notEmpty(),
     body('imageUrl').notEmpty(),
     async (request, response) => {
 

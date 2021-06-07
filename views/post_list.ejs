@@ -13,7 +13,12 @@
                 <p><%= post.message %></p>
                 <img src="<%= post.imageUrl %>" />
                 <p><%= post.likedBy.name %> </p> <p> <%= post.dislikedBy.name %></p>
-            </article>  
+            </article>
+            <button text="dislike"></button>
+            <form method="post" action="/:postId/like/">
+                <button text="like"></button>
+                <input type="hidden" id="postId" name="postId" value="body.postId">
+            </form>
         </li>
 
         <% }); %>
