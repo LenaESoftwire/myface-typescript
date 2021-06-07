@@ -12,12 +12,16 @@
                 <time><%= post.createdAt %></time>
                 <p><%= post.message %></p>
                 <img src="<%= post.imageUrl %>" />
-                <p><%= post.likedBy.name %> </p> <p> <%= post.dislikedBy.name %></p>
+                <!-- <p><%= post.likedBy.name %> </p> <p> <%= post.dislikedBy.name %></p> -->
             </article>
-            <button text="dislike"></button>
-            <form method="post" action="/:postId/like/">
-                <button text="like"></button>
-                <input type="hidden" id="postId" name="postId" value="body.postId">
+            <form action="/:postId/like/" method="get" id="like">
+                <input type="hidden" id="postId" name="postId" value="body.postId"> 
+                <button type="submit" form="form1" value="like">Like</button>
+            </form>
+            
+            <form action="/:postId/dislike/" method="get" id="dislike">
+                <input type="hidden" id="postId" name="postId" value="body.postId"> 
+                <button type="submit" form="form2" value="dislike">Disike</button>
             </form>
         </li>
 

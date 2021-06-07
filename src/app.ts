@@ -17,6 +17,7 @@ app.set('view engine', 'ejs');
 app.use('/posts', postRoutes);
 app.use('/users', userRoutes);
 
+
 app.get('', (request, response) => {
     return response.redirect('/posts/');
 });
