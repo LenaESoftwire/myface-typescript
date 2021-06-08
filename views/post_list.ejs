@@ -8,34 +8,36 @@
         <% results.forEach(function(post) {%>
         <li>
             <article> 
-                <p><%= post.postedBy.name %></p> 
-                <time><%= post.createdAt %></time>
-                <p><%= post.message %></p>
-                <img src="<%= post.imageUrl %>" />
-                <!-- <p><%= post.likedBy.name %> </p> <p> <%= post.dislikedBy.name %></p> -->
+                <div class="text">
+                    <p class="message"><%= post.message %>  </p> 
+                </div>
+                <div class="picture">
+                    <img src="<%= post.imageUrl %>" />
+                </div>
+
             </article>
-            <form action="/:postId/like/" method="get" id="like">
-                <input type="hidden" id="postId" name="postId" value="body.postId"> 
-                <button type="submit" form="form1" value="like">Like</button>
+            <p class="infoText">Created by <%= post.postedBy.name %> at <time class="infoText"><%= post.createdAt %></time></p>
+            <form method="post" action="/posts/<%= post.id %>/like/" >
+                <button type="submit" >Like</button>
             </form>
             
-            <form action="/:postId/dislike/" method="get" id="dislike">
-                <input type="hidden" id="postId" name="postId" value="body.postId"> 
-                <button type="submit" form="form2" value="dislike">Disike</button>
+            <form method="post" action="/posts/<%= post.id %>/dislike/">
+                <button type="submit" >Disike</button>
             </form>
+           
         </li>
 
         <% }); %>
     </ol>
-    <nav>
-        <%if (previous) { %>
-        <a href="<%= previous %>">Previous</a>
-        <% } %>
-        <%if (next) { %>
-        <a href="<%= next %>">Next</a>
-        <% } %>
-    </nav> 
 </body>
+<nav>
+    <%if (previous) { %>
+    <a href="<%= previous %>">Previous</a>
+    <% } %>
+    <%if (next) { %>
+    <a href="<%= next %>">Next</a>
+    <% } %>
+</nav> 
 <%- include('_footer') -%>
 
 </html>

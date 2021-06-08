@@ -4,14 +4,14 @@
 <body>
 <h1>Create Post</h1>
 <form method="post" action="/posts/create">
-    <label>
+    <label class="CreatePost">
         Message:
         <!-- <input type="textarea" name="message"/> -->
-        <input type="text" name="message" required>
+        <input class="InputText" type="textarea" name="message" required>
     </label>
-    <label>
+    <label class="CreatPostUrl">
         ImgUrl:
-        <input type="url" name="imageUrl"/>
+        <input type="url" name="imageUrl" required>
     </label>
     <button type="submit">Submit</button>
 </form>

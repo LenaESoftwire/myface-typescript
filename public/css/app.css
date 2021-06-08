@@ -1,1 +1,152 @@
 /* Add your styles here. */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, sans-serif;
+}
+
+header {
+    height: 50px;
+    background-color: #232f34;
+    display: flex;
+    padding: 5px 0;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 15px;
+    text-align: center;
+}
+
+header a:hover {
+    color: orange;
+}
+
+h1 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: block ;
+  
+}
+
+ol{
+    padding-inline-start: 0px;
+    list-style: none;
+}
+
+li form {
+    padding: 3px;
+    display: inline-block;
+}
+
+.message {
+    font-size: 20px;
+}
+
+button {
+    background-color: #F9AA33;
+    color: black;
+}
+
+button:hover{
+    background-color: #6000fc;
+    color: black;
+}
+
+img {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.likes {
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+
+/* form {
+    display: flex;
+    flex-direction: column; 
+    width: 50%;
+
+}
+
+form label {
+    width: 40%;
+    margin-bottom: 3%;
+} */
+
+@media screen and (min-width: 1000px ) {
+
+    .infoText {
+
+
+    }
+    
+}
+
+@media screen and (min-width: 600px ) {
+
+    *{
+        padding: 0;
+    }
+
+    ol {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    li {
+        flex-grow: 1;
+        width: 40%;
+        margin: 2%;
+        padding: 0.5%;
+        padding-bottom: 3%;
+        border: 1px solid rgb(168, 168, 168);
+        border-radius: 1%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    }   
+
+    li img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    li p {
+        font-size: 5%;
+    }
+
+    .text {
+        height: 15%;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    li {
+        /* width: 0%; */
+        flex-grow: 1
+    }   
+
+    ol:nth-child(3n) {
+
+        flex-grow: 5;
+      
+      }
+
+}
