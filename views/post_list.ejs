@@ -7,8 +7,8 @@
     <ol>
         <% results.forEach(function(post) {%>
         <li>
-            <article> 
-                <div class="text">
+            <article class="post"> 
+                <div>
                     <p class="message"><%= post.message %>  </p> 
                 </div>
                 <div class="picture">
@@ -18,11 +18,11 @@
             </article>
             <p class="infoText">Created by <%= post.postedBy.name %> at <time class="infoText"><%= post.createdAt %></time></p>
             <form method="post" action="/posts/<%= post.id %>/like/" >
-                <button type="submit" >Like</button>
+                <button class="likes" type="submit" >Like</button>
             </form>
             
             <form method="post" action="/posts/<%= post.id %>/dislike/">
-                <button type="submit" >Disike</button>
+                <button class="likes" type="submit" >Disike</button>
             </form>
            
         </li>
@@ -30,7 +30,7 @@
         <% }); %>
     </ol>
 </body>
-<nav>
+<nav class="navigation">
     <%if (previous) { %>
     <a href="<%= previous %>">Previous</a>
     <% } %>
