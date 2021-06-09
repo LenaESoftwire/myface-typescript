@@ -1,8 +1,19 @@
 <html lang="en-gb">
 <%- include('_head') -%>
 <%- include('_header') -%>
-<body>
-<h1><%= name %></h1>
+<body class="userPage">
+
+<img class="imageCover"src=<%= coverImageUrl %> />
+<div class="profileBlock">  
+    <div class="profileBlockImg">
+        <img class="imageProfile" style="z-index: 4" src=<%= profileImageUrl %> />
+    </div>
+    <div class="profileBlockInfo">
+        <h1 style="z-index: 4"><%= name %></h1>
+        <h2 style="z-index: 4"><%= username %></h2>
+        <h2 style="z-index: 4"><%= email %></h2>
+    </div>
+</div>
 </body>
 <%- include('_footer') -%>
 </html>

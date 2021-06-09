@@ -4,7 +4,7 @@
     padding: 0;
     font-family: Calibri, sans-serif;
 }
-
+/* 
 header {
     height: 50px;
     background-color: #232f34;
@@ -27,7 +27,7 @@ h1 {
     color: black;
     font-size: 30px;
     text-align: center;
-}
+}*/
 
 body {
     box-sizing: border-box;
@@ -37,7 +37,7 @@ body {
     display: block ;
   
 }
-
+/*
 ol{
     padding-inline-start: 0px;
     list-style: none;
@@ -87,6 +87,8 @@ form label {
     width: 40%;
     margin-bottom: 3%;
 } */
+
+/*
 
 @media screen and (min-width: 1000px ) {
 
@@ -139,7 +141,8 @@ form label {
 @media screen and (min-width: 1000px) {
 
     li {
-        /* width: 0%; */
+        
+        width: 0%;
         flex-grow: 1
     }   
 
@@ -150,3 +153,59 @@ form label {
       }
 
 }
+ */
+
+.userPage{
+    background-color: #252A38;
+    margin: 24px;
+    padding: 0;
+    font-family: 'Segoe UI', "Open Sans", sans-serif;
+    z-index: 2; 
+       
+}
+
+.imageCover{
+    height: 200px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-position: center;
+    z-index: -1;
+}
+
+
+.profileBlock{ 
+    position: fixed;
+    width:100%;
+    top: 150px;  
+    left: 100px;
+    background-color: #70252A38;
+    display: inline-flex;
+}
+
+
+
+.profileBlock h1, .profileBlock h2 {
+    color: white;
+    padding: 4px; 
+}
+
+
+.imageProfile{
+    height: 120px;
+    width:120px;
+    position:relative;
+    top:0;
+    left:0;
+    border-radius: 50%;
+    border:3px solid rgb(255, 255, 255);
+    float: left;
+    
+}
+
+.profileBlockInfo {
+    margin-left: 15%;
+}
+
+
+
