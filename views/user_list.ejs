@@ -6,7 +6,9 @@
 <ol>
     <% results.forEach(function(user) {%>
         <li>
-            <%= user.name %>
+            <a href="/users/<%= user.id %>">
+                <%= user.name %>
+            </a>
         </li>
     <% }); %>
 </ol>

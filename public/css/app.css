@@ -1,9 +1,8 @@
 /* Add your styles here. */
-* {
+/* * {
     margin: 0;
     padding: 0;
-    font-family: Calibri, sans-serif;
-}
+} */
 /* 
 header {
     height: 50px;
@@ -33,7 +32,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     background-color: white;
-    color: black;
+    color: white;
     display: block ;
   
 }
@@ -157,8 +156,7 @@ form label {
 
 .userPage{
     background-color: #252A38;
-    margin: 24px;
-    padding: 0;
+    margin: 48px;
     font-family: 'Segoe UI', "Open Sans", sans-serif;
     z-index: 2; 
        
@@ -167,7 +165,7 @@ form label {
 .imageCover{
     height: 200px;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     background-position: center;
     z-index: -1;
@@ -175,7 +173,7 @@ form label {
 
 
 .profileBlock{ 
-    position: fixed;
+    position: absolute;
     width:100%;
     top: 150px;  
     left: 100px;
@@ -183,11 +181,15 @@ form label {
     display: inline-flex;
 }
 
-
-
-.profileBlock h1, .profileBlock h2 {
+.profileBlock h1 {
     color: white;
-    padding: 4px; 
+    font-size: 24px;
+    /* padding: 4px;  */
+}
+
+.profileBlock h2 {
+    /* color: white; */
+    font-size: 14px;
 }
 
 
@@ -200,11 +202,39 @@ form label {
     border-radius: 50%;
     border:3px solid rgb(255, 255, 255);
     float: left;
-    
 }
 
 .profileBlockInfo {
-    margin-left: 15%;
+    margin-left: 0%;
+}
+.imageTechswitch{
+    height:100px;
+    position: relative;
+    height: 50px;
+    bottom: 0;
+    
+}
+
+footer{
+    
+
+}
+
+.posts {
+  padding-top: 5%;
+}
+
+.post {
+    list-style: none;
+    float: left;
+    width: 250px;
+    margin: 10px;
+    padding: 0 10px;
+    color: white;
+}
+
+.posts p {
+    font-size: 14px;
 }
 
 

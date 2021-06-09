@@ -14,6 +14,58 @@
         <h2 style="z-index: 4"><%= email %></h2>
     </div>
 </div>
+<div class="usersPost">
+    <h1><%= name %>'s Post</h1>
+    <ol>
+        <% posts.forEach(function(post) {%>
+        <li>
+            <div class="post"> 
+                <div class="text">
+                    <p class="message"><%= post.message %>  </p> 
+                </div>
+                <div class="picture">
+                    <img src="<%= post.imageUrl %>" />
+                </div>
+                <p class="infoText"> <%= username %> <%= post.createdAt %></p>
+            </div>
+               
+        </li>
+
+        <% }); %>
+    </ol>
+</div>
+<div class="likedPosts">
+    <h2> Post's <%= name %> has liked</h2>
+    <div class="post">
+        <img src="#" />
+        <div class="postInfo">
+            <h3><%= username %></h3>
+            <p>23/06/2021</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget nulla sit amet elit auctor dignissim. Sed varius nunc ex, nec vulputate ligula mollis et. Aliquam erat volutpat. </p>
+        </div>
+
+    </div>
+    <div class="post">
+        <img src="#" />
+        <div class="postInfo">
+            <h3><%= username %></h3>
+            <p>23/06/2021</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget nulla sit amet elit auctor dignissim. Sed varius nunc ex, nec vulputate ligula mollis et. Aliquam erat volutpat. </p>
+        </div>
+
+    </div>
+    <div class="post">
+        <img src="#" />
+        <div class="postInfo">
+            <h3><%= username %></h3>
+            <p>23/06/2021</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget nulla sit amet elit auctor dignissim. Sed varius nunc ex, nec vulputate ligula mollis et. Aliquam erat volutpat.</p>
+        </div>
+
+</div>
+
+
+
 </body>
 <%- include('_footer') -%>
 </html>
