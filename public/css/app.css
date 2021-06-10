@@ -4,6 +4,10 @@
     padding: 0;
 } */
 
+#header {
+    display: none;
+}
+
 header {
     height: 50px;
     background-color: black;
@@ -15,6 +19,7 @@ header {
     list-style: none;
     display: inline;
     width: 100%;
+    
 }
 
 header a {

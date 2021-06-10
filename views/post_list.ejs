@@ -4,6 +4,7 @@
 
 <body>
     <h1>Posts</h1>
+    <button style="z-index: 4" id="hideButton">Button</button> 
     <ol>
         <% results.forEach(function(post) {%>
         <li class="posts">
@@ -29,6 +30,7 @@
 
         <% }); %>
     </ol>
+    <button id="colourButton">Change Colour</button>
 </body>
 <nav>
     <%if (previous) { %>
