@@ -5,12 +5,11 @@
 } */
 
 #header {
-    display: none;
+    display: block;
 }
 
 header {
     height: 50px;
-    background-color: black;
     display: flex;
     padding: 5px 0;
 }
@@ -19,13 +18,13 @@ header {
     list-style: none;
     display: inline;
     width: 100%;
-    
+
 }
 
 header a {
     text-decoration: none;
     color: white;
-    margin: 0px 15px;
+    margin: 0px 0px;
     text-align: center;
 }
 
@@ -37,20 +36,20 @@ h1 {
     color: white;
     font-size: 30px;
     text-align: center;
-} 
+}
 
 body {
     box-sizing: border-box;
     width: 100%;
     background-color: #252A38;
     color: white;
-    display: block ;
+    display: block;
     /* margin: 48px; */
     font-family: 'Segoe UI', "Open Sans", sans-serif;
-  
+
 }
 
-ol{
+ol {
     padding-inline-start: 0px;
     list-style: none;
 }
@@ -65,13 +64,11 @@ li form {
     font-size: 20px;
 }
 
-/* button {
+button {
     background-color: #F9AA33;
-    color: black;
-    display: inline;
-} */
+}
 
-button:hover{
+button:hover {
     background-color: #6000fc;
     color: black;
 }
@@ -84,6 +81,7 @@ button:hover{
 .likeForm {
     display: inline;
 }
+
 .likes {
     color: white;
     font-weight: bold;
@@ -96,7 +94,7 @@ button:hover{
 
 form {
     display: inline;
-    flex-direction: column; 
+    flex-direction: column;
     width: 50%;
 
 }
@@ -108,18 +106,15 @@ form label {
 
 
 
-@media screen and (min-width: 1000px ) {
+@media screen and (min-width: 1000px) {
 
-    .infoText {
+    .infoText {}
 
-
-    }
-    
 }
 
-@media screen and (min-width: 600px ) {
+@media screen and (min-width: 600px) {
 
-    *{
+    * {
         padding: 0;
     }
 
@@ -140,7 +135,7 @@ form label {
         border-radius: 1%;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-    }  
+    }
 
     li img {
         height: 300px;
@@ -160,29 +155,29 @@ form label {
 @media screen and (min-width: 1000px) {
 
     li {
-        
+
         width: 0%;
         flex-grow: 1
-    }   
+    }
 
     ol:nth-child(3n) {
 
         flex-grow: 5;
-      
-      }
+
+    }
 
 }
 
 
-.userPage{
+.userPage {
     background-color: #252A38;
     margin: 48px;
     font-family: 'Segoe UI', "Open Sans", sans-serif;
-    z-index: 2; 
-       
+    z-index: 2;
+
 }
 
-.imageCover{
+.imageCover {
     height: 200px;
     width: 100%;
     position: absolute;
@@ -192,10 +187,10 @@ form label {
 }
 
 
-.profileBlock{ 
+.profileBlock {
     position: absolute;
-    width:100%;
-    top: 150px;  
+    width: 100%;
+    top: 150px;
     left: 100px;
     background-color: #70252A38;
     display: inline-flex;
@@ -213,35 +208,31 @@ form label {
 }
 
 
-.imageProfile{
+.imageProfile {
     height: 120px;
-    width:120px;
-    position:relative;
-    top:0;
-    left:0;
+    width: 120px;
+    position: relative;
+    top: 0;
+    left: 0;
     border-radius: 50%;
-    border:3px solid rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
     float: left;
 }
 
 .profileBlockInfo {
     margin-left: 0%;
 }
-.imageTechswitch{
-    height:100px;
+
+.imageTechswitch {
+    height: 100px;
     position: relative;
     height: 50px;
     bottom: 0;
-    
-}
-
-footer{
-    
 
 }
 
 .posts {
-  padding-top: 5%;
+    padding-top: 5%;
 }
 
 .post {
@@ -257,5 +248,48 @@ footer{
     font-size: 14px;
 }
 
+@media screen and (max-width: 375px) {
+    * {
+        overflow: auto;
+    }
 
+    #header nav {
+        display: none;
+        flex-direction: column;
+        width: 80vw;
+        right: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.541);
+        height: 100vh;
+        position: fixed;
+        font-size: 25px;
+        font-weight: 400;
+        align-items: center;
+    }
 
+    .navLinks {
+        width: 100%;
+        padding-bottom: 10%;
+        font-size: 18px;
+    }
+
+    .navLinks:hover {
+        background-color: rgba(169, 169, 169, 0.459);
+    }
+
+    #myFace {
+        padding-top: 10%;
+        padding-bottom: 40%;
+        font-size: 25px;
+    }
+
+    .headerImg {
+        padding-top: 5%;
+        width: 70%;
+        text-align: center;
+    }
+
+    #navNewPost {
+        padding-bottom: 40%;
+    }
+}
