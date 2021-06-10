@@ -2,6 +2,7 @@
 <%- include('_head') -%>
 <%- include('_header') -%>
 <body class="userPage">
+    <h1 style="z-index: 4">MyFace</h1>
 
 <img class="imageCover"src=<%= coverImageUrl %> />
 <div class="profileBlock">  
@@ -18,8 +19,8 @@
     <h1><%= name %>'s Post</h1>
     <ol>
         <% posts.forEach(function(post) {%>
-        <li>
-            <div class="post"> 
+        <li class="posts">
+            <div> 
                 <div class="text">
                     <p class="message"><%= post.message %>  </p> 
                 </div>

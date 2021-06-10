@@ -3,12 +3,18 @@
     margin: 0;
     padding: 0;
 } */
-/* 
+
 header {
     height: 50px;
-    background-color: #232f34;
+    background-color: black;
     display: flex;
     padding: 5px 0;
+}
+
+.navigationList {
+    list-style: none;
+    display: inline;
+    width: 100%;
 }
 
 header a {
@@ -23,17 +29,19 @@ header a:hover {
 }
 
 h1 {
-    color: black;
+    color: white;
     font-size: 30px;
     text-align: center;
-}*/
+} 
 
 body {
     box-sizing: border-box;
     width: 100%;
-    background-color: white;
+    background-color: #252A38;
     color: white;
     display: block ;
+    /* margin: 48px; */
+    font-family: 'Segoe UI', "Open Sans", sans-serif;
   
 }
 
@@ -45,38 +53,44 @@ ol{
 li form {
     padding: 3px;
     display: inline-block;
+    list-style: none;
 }
 
 .message {
     font-size: 20px;
 }
 
-button {
+/* button {
     background-color: #F9AA33;
     color: black;
-}
+    display: inline;
+} */
 
 button:hover{
     background-color: #6000fc;
     color: black;
 }
 
-img {
+/* img {
     box-sizing: border-box;
     width: 100%;
-}
+} */
 
+.likeForm {
+    display: inline;
+}
 .likes {
     color: white;
     font-weight: bold;
     padding: 5px 10px;
     margin: 5px;
     border-radius: 5px;
+    background-color: #F9AA33;
 }
 
 
 form {
-    display: flex;
+    display: inline;
     flex-direction: column; 
     width: 50%;
 
@@ -110,9 +124,10 @@ form label {
         justify-content: center;
     }
 
-    li {
+    .posts {
         flex-grow: 1;
         width: 40%;
+        height: fit-content;
         margin: 2%;
         padding: 0.5%;
         padding-bottom: 3%;
@@ -120,16 +135,16 @@ form label {
         border-radius: 1%;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-    }   
+    }  
 
     li img {
         height: 300px;
         object-fit: cover;
     }
 
-    li p {
+    /* li p {
         font-size: 5%;
-    }
+    } */
 
     .text {
         height: 15%;
